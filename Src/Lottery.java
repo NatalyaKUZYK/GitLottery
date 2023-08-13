@@ -3,16 +3,16 @@ import java.util.Random;
 
 public class Lottery {
         public static void main(String[] args) {
-            int[] first = generateRandomArray(7); // генеруємо перший масив
-            int[] second = generateRandomArray(7); // генеруємо другий масив
+            int[] first = generateRandomArray(7);
+            int[] second = generateRandomArray(7);
 
-            Arrays.sort(first); // сортуємо перший масив
-            Arrays.sort(second); // сортуємо другий масив
+            Arrays.sort(first);
+            Arrays.sort(second);
 
             System.out.println(Arrays.toString(first));
             System.out.println(Arrays.toString(second));
 
-            int count = countMatches(first, second); // знаходимо кількість збігів
+            int count = countMatches(first, second);
 
             System.out.println("Кількість збігів: " + count);
         }
@@ -22,7 +22,7 @@ public class Lottery {
             Random random = new Random();
 
             for (int i = 0; i < size; i++) {
-                array[i] = random.nextInt(10); // генеруємо випадкове число від 0 до 9
+                array[i] = random.nextInt(10);
             }
 
             return array;
